@@ -67,6 +67,8 @@ in a sign-in or sign-up flow:
 |`password.forgot.resend_code.completed`|A password reset email has been re-sent to the user.|
 |`password.forgot.verify_code.start`|A user has clicked on the link in a password reset email.|
 |`password.forgot.verify_code.completed`|A password reset has been successfully completed on the server.|
+|`route.${path}.200`| A route responded with a 200 status code. Example: `route./account/login.200`|
+|`route.${path}.${statusCode}.${errno}`| A route responded with a >=400 status code. Includes `errno`. Example: `route./account/login.400.103`|
 |`flow.completed`|A user has successfully completed a sign-in or sign-up flow.|
 
 The following flow events
